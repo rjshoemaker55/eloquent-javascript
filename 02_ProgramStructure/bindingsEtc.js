@@ -32,3 +32,29 @@ while (counter < 10) {
   counter++;
 }
 console.log(result);
+
+// Do loop always execudes block at least once, then tests the conditional
+let yourName;
+do {
+  yourName = 'RJ';
+} while (!yourName);
+console.log(yourName);
+
+// For loop
+for (i = 0; i <= 10; i++) {
+  console.log(`Im counting! Number: ${i}`);
+}
+
+let result2 = 1;
+for (i = 0; i <= 10; i++) {
+  result2 = result2 * result2;
+}
+console.log(result2);
+
+// Break out of a for loop early
+for (i = 20; ; i++) {
+  if (i % 7 == 0) {
+    console.log(i);
+    break;
+  }
+}
