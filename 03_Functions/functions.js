@@ -95,43 +95,44 @@ function findSolution(target) {
 
 console.log(findSolution(24));
 
-// findSolution(24);
-// find(1, '1');
-// find(6, `(1 + 5)`);
-// find(11, `((1 + 5) + 5)`);
-// find(16, `(((1 + 5) + 5 ) + 5)`);
-// find(21, `((((1 + 5) + 5) + 5) + 5)`);
-// find(26, `(((((1 + 5) + 5) + 5) + 5) + 5)`); // 26 is over 24, returns null
-// null;
-// find(63, `(((((1 + 5) + 5) + 5) + 5) * 3)`); // 63 is over 24, returns null
-// null;
-// find(48, `((((1 + 5) + 5) + 5) * 3)`);
-// null; // 48 is over 24, returns null
-// find(33, `(((1 + 5) + 5) * 3)`); // 33 is over 24, returns null
-// null;
-// find(18, `((1 + 5) * 3)`);
-// find(23, `(((1 + 5) * 3) + 5)`);
-// find(28, `((((1 + 5) * 3) + 5) + 5)`); // 28 is over 24, returns null
-// null;
-// find(69, `((((1 + 5) * 3) + 5) + 5)`); // 69 is over 24, returns null
-// null;
-// find(54, `(((1 * 5) * 3) * 3)`); // 54 is over 24, returns null
-// null;
-// find(3, `(1 * 3)`);
-// find(8, `((1 * 3) + 5)`);
-// find(13, `(((1 * 3) + 5) + 5)`);
-// find(18, `((((1 * 3) + 5) + 5) + 5)`);
-// find(23, `(((((1 * 3) + 5) + 5) + 5) + 5)`);
-// find(28, `((((((1 * 3) + 5) + 5) + 5) + 5) + 5)`); // returns null, 28 is over 24
-// null;
-// find(69, `((((((1 * 3) + 5) + 5) + 5) + 5) * 3)`); // returnes null, 69 is over 24
-// null;
-// find(54, `(((((1 * 3) + 5) + 5) + 5) * 3)`); // returns null, 54 is over 24
-// null;
-// find(39, `((((1 * 3) + 5) + 5) * 3)`); // returns null, 39 is over 24
-// find(24, `(((1 * 3) + 5) * 3)`) // returns history, 24 = 24
-// `(((1 * 3) + 5) * 3)`;
-// find(9, `((1 * 3) * 3)`);
+findSolution(24);
+find(1, '1');
+find(6, `(1 + 5)`);
+find(11, `((1 + 5) + 5)`);
+find(16, `(((1 + 5) + 5 ) + 5)`);
+find(21, `((((1 + 5) + 5) + 5) + 5)`);
+find(26, `(((((1 + 5) + 5) + 5) + 5) + 5)`); // 26 is over 24, returns null
+null;
+find(63, `(((((1 + 5) + 5) + 5) + 5) * 3)`); // 63 is over 24, returns null
+null;
+find(48, `((((1 + 5) + 5) + 5) * 3)`);
+null; // 48 is over 24, returns null
+find(33, `(((1 + 5) + 5) * 3)`); // 33 is over 24, returns null
+null;
+find(18, `((1 + 5) * 3)`);
+find(23, `(((1 + 5) * 3) + 5)`);
+find(28, `((((1 + 5) * 3) + 5) + 5)`); // 28 is over 24, returns null
+null;
+find(69, `((((1 + 5) * 3) + 5) + 5)`); // 69 is over 24, returns null
+null;
+find(54, `(((1 * 5) * 3) * 3)`); // 54 is over 24, returns null
+null;
+find(3, `(1 * 3)`);
+find(8, `((1 * 3) + 5)`);
+find(13, `(((1 * 3) + 5) + 5)`);
+find(18, `((((1 * 3) + 5) + 5) + 5)`);
+find(23, `(((((1 * 3) + 5) + 5) + 5) + 5)`);
+find(28, `((((((1 * 3) + 5) + 5) + 5) + 5) + 5)`); // returns null, 28 is over 24
+null;
+find(69, `((((((1 * 3) + 5) + 5) + 5) + 5) * 3)`); // returnes null, 69 is over 24
+null;
+find(54, `(((((1 * 3) + 5) + 5) + 5) * 3)`); // returns null, 54 is over 24
+null;
+find(39, `((((1 * 3) + 5) + 5) * 3)`); // returns null, 39 is over 24
+null;
+find(24, `(((1 * 3) + 5) * 3)`) // returns history, 24 = 24
+`(((1 * 3) + 5) * 3)`;
+find(9, `((1 * 3) * 3)`);
 
 function riddle(target) {
   function find(current, history) {
