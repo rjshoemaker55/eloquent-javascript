@@ -19,6 +19,18 @@ let journal = [
     events: ['weekend', 'cycling', 'break', 'peanuts', 'beer'],
     squirrel: true,
   },
+  {
+    events: ['weekend', 'cycling', 'break', 'pizza', 'beer'],
+    squirrel: true,
+  },
+  {
+    events: ['weekend', 'cycling', 'break', 'pizza', 'beer'],
+    squirrel: false,
+  },
+  {
+    events: ['pizza', 'cycling', 'break', 'peanuts', 'beer'],
+    squirrel: true,
+  },
 ];
 
 // this function returns a list of all events
@@ -34,8 +46,6 @@ function journalEvents(journal) {
   return events;
 }
 
-console.log(journalEvents(journal));
-
 // this function constructs a table based on a journal (above);
 function tableFor(journal, event) {
   let table = [0, 0, 0, 0];
@@ -44,13 +54,11 @@ function tableFor(journal, event) {
     let entry = journal[i],
       index = 0;
     if (entry.events.includes(event)) index++;
-    if (entry.pizza) index += 2;
+    if (entry.squirrel) index += 2;
     table[index]++;
   }
   return table;
 }
-
-console.log(`table for journal: ${tableFor(journal, 'pizza')}`);
 
 // this function returns the phi coefficient based on a table of [ n00, n01, n10, n11 ]
 function phi(table) {
@@ -69,4 +77,7 @@ function phi(table) {
 // in this case it is if squirrel is true or false, and if pizza is true or false
 let table = [/* n00 */ 76, /* n01 */ 9, /* n10 */ 4, /*  n11 */ 1];
 
-console.log(phi(table));
+// this will loop through all of the events and find the phi (correlation coefficient) of each relating to squirrel
+for (event of journalEvents(journal)) {
+  console.log(`Event: ${event}   Phi: ${phi(tableFor(journal, event))}`);
+}
