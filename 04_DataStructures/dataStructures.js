@@ -45,4 +45,4 @@ Object.keys(day1); // returns all properties a given object has as an array - ['
 let objectA = { x: 0, y: 1, z: 2 };
 let objectB = { a: 1 };
 
-Object.assign(objectB, objectA); // objectB now contains a: 1
+Object.assign(objectB, objectA); // objectB now contains all of object a
